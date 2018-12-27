@@ -1,0 +1,514 @@
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+	height: 100vh;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	position: relative;
+	overflow-y: scroll;
+	background-image: -webkit-gradient(linear, left top, right top, from(#ede5df), color-stop(#e4dcd7), color-stop(#dbd4ce), color-stop(#d2cbc6), to(#c9c3be));
+	background-image: -webkit-linear-gradient(left, #ede5df, #e4dcd7, #dbd4ce, #d2cbc6, #c9c3be);
+	background-image: -o-linear-gradient(left, #ede5df, #e4dcd7, #dbd4ce, #d2cbc6, #c9c3be);
+	background-image: linear-gradient(to right, #ede5df, #e4dcd7, #dbd4ce, #d2cbc6, #c9c3be);
+}
+
+h1, h2, h3, h4, a {
+	font-family: 'Playfair Display', serif;
+}
+
+.navbar a {
+	color: rgba(255, 255, 255, 0.9);
+}
+
+.horizontal-scroll-wrapper {
+	margin: 0;
+	padding: 0;
+}
+
+#rowContainer {
+	width: 100vw;
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+	overflow-x: scroll;
+	-ms-flex-wrap: nowrap;
+	    flex-wrap: nowrap;
+}
+
+
+.protein {
+	background-color: transparent;
+}
+
+
+#jumbotron {
+	height: 100vh;
+	background: url("background.gif");
+	background-size: cover; 
+	margin: 0;
+	background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode: lighten;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+#fem {
+	display: inline-block;
+}
+
+#noun {
+	display: inline-block;
+	margin-left: 5px;
+}
+
+.lead {
+	margin-bottom: auto;
+}
+
+
+#i {
+  background: #39b5e8;
+  width: 10px;
+  height: 10px;
+  position: fixed;
+  z-index: 2;
+}
+
+#scrollDown {
+	text-align: center;
+	display: block;
+	-webkit-animation-name: smoothBlink;
+	        animation-name: smoothBlink;
+	-webkit-animation-duration: 2s;
+	        animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease-in-out;
+	        animation-timing-function: ease-in-out;
+}
+
+.card-body{
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.source {
+	font-size: 12px;
+	text-align: right;
+}
+
+.next {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
+	padding-right: 0;
+	margin-right: 0;
+}
+
+@-webkit-keyframes smoothBlink {
+	from {color: rgba(0, 0, 0, 0.8);}
+	50% {color: rgba(0, 0, 0, .2);}
+	to {color: rgba(0, 0, 0, 0.8);}
+}
+
+@keyframes smoothBlink {
+	from {color: rgba(0, 0, 0, 0.8);}
+	50% {color: rgba(0, 0, 0, .2);}
+	to {color: rgba(0, 0, 0, 0.8);}
+}
+
+@-webkit-keyframes smoothBlink2 {
+	from {background-color: rgba(0, 0, 0, 0.8);}
+	50% {background-color: rgba(0, 0, 0, .2);}
+	to {background-color: rgba(0, 0, 0, 0.8);}
+}
+
+@keyframes smoothBlink2 {
+	from {background-color: rgba(0, 0, 0, 0.8);}
+	50% {background-color: rgba(0, 0, 0, .2);}
+	to {background-color: rgba(0, 0, 0, 0.8);}
+}
+
+@-webkit-keyframes glow {
+	from {text-shadow: 0 0 40px #000, 0 0 80px #000, 0 0 120px #000, 0 0 160px #ede5df, 0 0 280px #ede5df, 0 0 320px #ede5df, 0 0 400px #ede5df, 0 0 600px #ede5df;}
+	to {text-shadow: 0 0 20px #000, 0 0 40px #000, 0 0 60px #000, 0 0 80px #ede5df, 0 0 140px #ede5df, 0 0 160px #ede5df, 0 0 200px #ede5df, 0 0 300px #ede5df;}
+}
+
+@keyframes glow {
+	from {text-shadow: 0 0 40px #000, 0 0 80px #000, 0 0 120px #000, 0 0 160px #ede5df, 0 0 280px #ede5df, 0 0 320px #ede5df, 0 0 400px #ede5df, 0 0 600px #ede5df;}
+	to {text-shadow: 0 0 20px #000, 0 0 40px #000, 0 0 60px #000, 0 0 80px #ede5df, 0 0 140px #ede5df, 0 0 160px #ede5df, 0 0 200px #ede5df, 0 0 300px #ede5df;}
+}
+
+/*000 should be color of icon*/
+
+.nextIcon {
+	font-size: 2vw;
+	-webkit-animation-name: smoothBlink;
+	        animation-name: smoothBlink;
+	-webkit-animation-duration: 2s;
+	        animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease-in-out;
+	        animation-timing-function: ease-in-out;
+}
+
+.next:hover .nextIcon {
+	color: #928FA0;
+	-webkit-animation-name: glow;
+	        animation-name: glow;
+	-webkit-animation-duration: 1.5s;
+	        animation-duration: 1.5s;
+	-webkit-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	        animation-direction: alternate;
+	-webkit-animation-timing-function: infinite;
+	        animation-timing-function: infinite;
+
+}
+
+#twitterFeed {
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+	height: 90vh;
+	max-height: 80%;
+	overflow-x: scroll;
+}
+#futureBottom {
+	height: 100%;
+}
+
+#futureContainer {
+	height: 100%;
+}
+
+.bookImage {
+	position: relative;
+	margin: 0 auto;
+
+}
+
+.carousel-item {
+	background-color: rgba(0, 0, 0, .1);
+	background-blend-mode: overlay;
+}
+
+.carousel-caption {
+	background-color: rgba(0, 0, 0, .3);
+}
+
+blockquote {
+	-webkit-transition: opacity .1s ease-in-out;
+	-o-transition: opacity .1s ease-in-out;
+	transition: opacity .1s ease-in-out;
+}
+
+/*TIMELINE STARTS*/
+
+.timelineContainer {
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+	width: 100%;
+	height: 90vh;
+	max-height: 80%;
+	padding: 0;
+	-ms-flex-item-align: center;
+	    -ms-grid-row-align: center;
+	    align-self: center;
+	position: relative;
+	-webkit-transition: 0.3s ease 0s;
+	-o-transition: 0.3s ease 0s;
+	transition: 0.3s ease 0s;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: top right;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	background-color: rgba(0, 0, 0, .8);
+    background-blend-mode: lighten;
+    -webkit-perspective: 100px;
+            perspective: 100px;
+}
+
+
+.timelineContainer::before {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+#timelineTitleContainer {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .8);
+	position: absolute;
+	z-index: 9999999;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
+
+}
+
+#timelineEnter:hover {
+	text-decoration: underline;
+}
+
+.timeline {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	position: relative;
+	margin: 0 auto;	
+	max-width: 100%;
+	-webkit-perspective: 300px;
+	        perspective: 300px;
+	-webkit-transform-style: preserve-3d;
+	        transform-style: preserve-3d;
+	-webkit-transform-origin: center;
+	    -ms-transform-origin: center;
+	        transform-origin: center;
+	overflow-y: hidden;
+}
+
+.timeline:before {
+	position: absolute;
+	left: 50%;
+	width: 2px;
+	height: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+	.timeline:before {
+		
+	}
+}
+
+.eventContainer {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	position: relative;
+	padding: 3px 0;
+	width: 50%;
+	max-width: 50%;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	opacity: .3;
+	-webkit-filter: blur(2px);
+	        filter: blur(2px);
+	-webkit-transition: .5s;
+	-o-transition: .5s;
+	transition: .5s;
+	-webkit-transform: translateY(-8px);
+	    -ms-transform: translateY(-8px);
+	        transform: translateY(-8px);
+	margin-left: 0;
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+.eventContainer:before {
+	position: absolute;
+	margin-top: -5px;
+	padding-left: 5px;
+	top: 70%;
+	opacity: 0;
+	max-width: 100%;
+}
+
+.eventContainer:nth-child(odd) {
+	-ms-flex-item-align: end;
+	    align-self: flex-end;
+	margin-left: 50%;
+}
+
+.eventContainer:nth-child(odd):before {
+	padding-left: 0;
+	padding-right: 5px;
+	right: auto;
+	text-align: right;
+}
+
+.eventContainer:last-child {
+	padding-bottom: 25%;
+}
+
+.eventContainerActive {
+	opacity: 1; 
+	-webkit-filter: blur(0px); 
+	        filter: blur(0px);
+}
+
+.eventContainerActive:before {
+	top: 50%;
+	-webkit-transition: 0.3s all 0.2s;
+	-o-transition: 0.3s all 0.2s;
+	transition: 0.3s all 0.2s;
+	opacity: 1;
+}
+
+.eventContent {
+	width: 100%;
+}
+
+details {
+	font-style: italic;
+	font-size: 10px;
+}
+
+cite {
+	font-size: 10px;
+}
+
+.content {
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	overflow-y: scroll;
+}
+
+.eventImg {
+	width: 100%;
+	-webkit-box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+	        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+}
+
+.scewOff {
+	-webkit-transform: rotateX(3.7deg);
+	transform-style: preserve-3d;
+}
+
+.scewOn {
+	-webkit-transform: rotateX(-3.7deg);
+	transform-style: preserve-3d;
+}
+
+
+/*FULL SCREEN*/
+
+@media (min-width: 992px) {
+	.protein {
+		min-height: 100vh;
+		width: 100%;
+		overflow-y: hidden;
+		overflow-x: scroll;
+		margin-right: 0;
+		padding-right: 0;
+	}
+
+	#jumbotron {
+		height: 100vh;
+	}
+
+	#customNav {
+		margin: 0;
+		height: 100vh;
+		width: 3vw;
+		position: absolute;
+		background-color: transparent;
+		z-index: 10000;
+		display: -webkit-box !important;
+		display: -ms-flexbox !important;
+		display: flex !important;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: end;
+		    -ms-flex-pack: end;
+		        justify-content: flex-end;
+	}
+
+	#customNav a {
+		display: block;
+		position: relative;
+		left: -300%;
+		width: 10vw;
+		height: 2vw;
+		margin-top: 2vh;
+		margin-bottom: 2vh;
+		-webkit-transform: skewX(-45deg);
+		    -ms-transform: skewX(-45deg);
+		        transform: skewX(-45deg);
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: end;
+		    -ms-flex-pack: end;
+		        justify-content: flex-end;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-animation-name: smoothBlink2;
+		        animation-name: smoothBlink2;
+		-webkit-animation-duration: 10s;
+		        animation-duration: 10s;
+		-webkit-animation-iteration-count: infinite;
+		        animation-iteration-count: infinite;
+		-webkit-animation-timing-function: ease-in-out;
+		        animation-timing-function: ease-in-out;
+	}
+
+	#customNav a:hover {
+		-webkit-transform: translateX(50%) skewX(-45deg);
+		    -ms-transform: translateX(50%) skewX(-45deg);
+		        transform: translateX(50%) skewX(-45deg);
+	}
+
+	.linkText {
+	  text-align: right;
+	  padding-right: 1.5vw;
+	  color: rgba(255, 255, 255, 1);
+	  position: absolute;
+	  -webkit-transform: skewX(45deg);
+	      -ms-transform: skewX(45deg);
+	          transform: skewX(45deg);
+	}
+
+	#futureTop {
+	max-height: 30vh;
+	}
+
+	#futureBottom {
+	max-height: 70vh;
+	}
+	
+}
+
+

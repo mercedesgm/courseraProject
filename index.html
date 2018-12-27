@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="cssFeminist.css">
+    <title>Feminist</title>
+</head>
+
+<body data-spy="scroll" data-target="#spy-scroll-id" data-offset="0" id="body">
+    <header class="jumbotron jumbotron-fluid" id="jumbotron" onmouseleave="jumboScroll()">
+        <div class="container">
+            <h1 class="display-1 " id="fem">feminism</h1>
+            <p id="noun">noun</p>
+            <p class="lead">fem·i·nism | \ˈfe-mə-ˌni-zəm\</p>
+            <p class="lead">: the theory of the political, economic, and social equality of the sexes</p>
+            <a class="d-none d-lg-block display-3 text-white-50" id="begin" href="javascript:scrollPast();">Enter <i class="fas fa-angle-right display-4"></i></a>
+            <i class="fas fa-angle-down d-lg-none display-4" id="scrollDown"></i>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand navbar-dark bg-dark d-lg-none sticky-top" id="spy-scroll-id">
+        <a class="navbar-brand" href="#jumbotron"><i class="fas fa-venus"></i> Feminism</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <a class="nav-item nav-link" href="#past"><span class="sr-only">(current)</span>Past</a>
+            <a class="nav-item nav-link" href="#present">Present</a>
+            <a class="nav-item nav-link" href="#future">Future</a>
+        </div>
+    </nav>
+    <main class="horizontal-scroll-wrapper container" id="horzScroll">
+        <div class="row flex-row flex-fill flex-wrap flex-lg-nowrap" id="rowContainer">
+            <nav id="customNav" class="d-none d-lg-block">
+                <a href="javascript:scrollStart()" class="navLink"><p class="linkText">start</p></a>
+                <a href="javascript:scrollPast();" class="navLink"><p class="linkText">past</p></a>
+                <a href="javascript:scrollPresent();" class="navLink"><p class="linkText">present</p></a>
+                <a href="javascript:scrollFuture();" class="navLink"><p class="linkText">future</p></a>
+            </nav>
+            <div id="past" class="protein col-lg-12 col-sm-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-12">
+                            <div id="introPast" class="col-lg-12">
+                                <h2 class="display-3">Past</h2>
+                                <p>The United States of America in the 20th century witnessed significant progress for women. From earning the right to vote to great strives towards economic equality, early feminists laid the groundwork for those to come after them.<br><br>However, many voices were not heard even throughout the feminist movement, especially the voices of people of color and those with low economic status. For example, white suffragettes forced black women to march at the back of parades and ignored racist oppression.<br><br>The following timeline is a brief overview of 20th century feminism. The timeline is in no way complete or extensive. It mainly focuses on legal accomplishments. Many stories, struggles, and achievements are overlooked. This does not make those stories any less important than the ones presented here.</p>
+                            </div>
+                        </div>
+                        <div class="timelineContainer col-lg-7 shadow" id="timelineContainer" onscroll="timelineTryTwo()">
+                            <div id="timeline">
+                                <div id="timelineTitleContainer">
+                                    <h1 class="display-4 text-muted text-light">Brief Review of American 20th Century Feminism</h1>
+                                    <a class="display-2 text-white-50" onclick="timelineCover()" id="timelineEnter">Enter  <i class="fas fa-angle-right display-4 text-white-50"></i></a>
+                                </div>
+                                <div class="eventContainer">
+                                    <div class="eventContent">
+                                        <img src="images/twenty.jpg" class="eventImg" alt="Sacred Twenty Nurses in 1908">
+                                        <details><summary>Details</summary>By Naval photographer - <a rel="nofollow" class="external text" href="http://www.history.navy.mil/photos/images/h52000/h52960c.htm">U.S. Naval Historical Center</a> Photograph., Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=2774588">Link</a></details>
+                                        <h2 class="contentTitle">Sacred Twenty</h2>
+                                        <h3>1908</h3>
+                                        <p class="content">"The Sacred Twenty were a group of nurses who were the first female members to ever formally serve in the United States Navy representing the Nurse Corps."</p>
+                                        <cite>“Sacred Twenty.” Wikipedia, Wikimedia Foundation, 10 Nov. 2018, en.wikipedia.org/wiki/Sacred_Twenty.</cite>
+                                    </div>
+                                </div>
+                                <div class="eventContainer">
+                                    <div class="eventContent">
+                                        <img src="images/mann.png" class="eventImg" alt="Propoganda poster depicting white slavery">
+                                        <details><summary>Details</summary>Bell, Ernest Albert - Bell, Ernest Albert!The War on the White Slave Trade.picture. Chicago: GS Ball, 1910. eBook.</details>
+                                        <h2 class="contentTitle">Mann Act (White-Slave Traffic Act)</h2>
+                                        <h3>June 25, 1910</h3>
+                                        <p class="content">"It is named after Congressman James Robert Mann of Illinois, and in its original form made it a felony to engage in interstate or foreign commerce transport of "any woman or girl for the purpose of prostitution or debauchery, or for any other immoral purpose". Its primary stated intent was to address prostitution, immorality, and human trafficking, particularly where trafficking was for the purposes of prostitution. This is one of several acts of protective legislation aimed at moral reform during the Progressive Era. In practice, its ambiguous language about "immorality" has resulted in its being used to criminalize even consensual sexual behavior between adults. It was amended by Congress in 1978 and again in 1986 to apply to transport for the purpose of prostitution or illegal sexual acts."</p>
+                                        <cite>“Mann Act.” Wikipedia, Wikimedia Foundation, 13 Oct. 2018, en.wikipedia.org/wiki/Mann_Act.</cite>
+                                    </div>
+                                </div>
+                                <div class="eventContainer">
+                                    <div class="eventContent">
+                                        <img src="images/Quimby.jpg" class="eventImg" alt="Harriet Quimby">
+                                        <details><summary>Details</summary>By Bain - Library of Congress, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=52043854">Link</a></details>
+                                        <h2 class="contentTitle">Harriet Quimby</h2>
+                                        <h3>August 1, 1911</h3>
+                                        <p class="content">"In 1911, she was awarded a U.S. pilot's certificate by the Aero Club of America, becoming the first woman to gain a pilot's license in the United States. In 1912, she became the first woman to fly across the English Channel. Although Quimby lived only to the age of 37, she influenced the role of women in aviation."</p>
+                                        <cite>“Harriet Quimby.” Wikipedia, Wikimedia Foundation, 28 Nov. 2018, en.wikipedia.org/wiki/Harriet_Quimby.</cite>
+                                    </div>
+                                </div>
+                                <div class="eventContainer">
+                                    <div class="eventContent">
+                                        <img src="images/paul.jpg" class="eventImg" alt="Alice Paul">
+                                        <details><summary>Details</summary>By Harris &amp; Ewing (photographic firm)<a href="//commons.wikimedia.org/wiki/User:Adam_Cuerden" title="User:Adam Cuerden">Adam Cuerden</a> - Restoration - This image is available from the United States <a href="//commons.wikimedia.org/wiki/Library_of_Congress" title="Library of Congress">Library of Congress</a>'s <a rel="nofollow" class="external text" href="//www.loc.gov/rr/print/">Prints and Photographs division</a> under the digital ID <a rel="nofollow" class="external text" href="http://hdl.loc.gov/loc.pnp/hec.06766">hec.06766</a>.This tag does not indicate the copyright status of the attached work. A normal copyright tag is still required. See <a href="//commons.wikimedia.org/wiki/Commons:Licensing" title="Commons:Licensing">Commons:Licensing</a> for more information., Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=37503087">Link</a></details>
+                                        <h2 class="contentTitle">Alice Paul becomes the leader of the Congressional Union</h2>
+                                        <h3>1913</h3>
+                                        <p class="content">"Alice Stokes Paul (January 11, 1885 – July 9, 1977) was an American suffragist, feminist, and women's rights activist, and one of the main leaders and strategists of the campaign for the Nineteenth Amendment to the U.S. Constitution, which prohibits sex discrimination in the right to vote."</p>
+                                        <cite>“Alice Paul.” Wikipedia, Wikimedia Foundation, 3 Dec. 2018, en.wikipedia.org/wiki/Alice_Paul.</cite>
+                                    </div>
+                                </div>
+                                <div class="eventContainer">
+                                    <div class="eventContent">
+                                        <img src="images/procession.jpg" class="eventImg" alt="Poster for suffrage parade of 1913">
+                                        <details><summary>Details</summary>By Benjamin Moran Dale (1889–1951), for the National American Women's Suffrage Association - This image is available from the United States <a href="//commons.wikimedia.org/wiki/Library_of_Congress" title="Library of Congress">Library of Congress</a>'s <a rel="nofollow" class="external text" href="//www.loc.gov/rr/print/">Prints and Photographs division</a> under the digital ID <a rel="nofollow" class="external text" href="http://hdl.loc.gov/loc.pnp/cph.3g02996">cph.3g02996</a>.This tag does not indicate the copyright status of the attached work. A normal copyright tag is still required. See <a href="//commons.wikimedia.org/wiki/Commons:Licensing" title="Commons:Licensing">Commons:Licensing</a> for more information., Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=24024303">Link</a></details>
+                                        <h2 class="contentTitle">Woman Suffrage Procession</h2>
+                                        <h3>March 3, 1913</h3>
+                                        <p class="content">"The woman suffrage parade of 1913, officially the Woman Suffrage Procession, was the first suffragist parade in Washington, D.C. Organized by the suffragist Alice Paul for the National American Woman Suffrage Association, thousands of suffragists marched down Pennsylvania Avenue in Washington, D.C., on Monday, March 3, 1913. The event was scheduled on the day before President Woodrow Wilson's inauguration to "march in a spirit of protest against the present political organization of society, from which women are excluded," as the official program stated. The march and the attention that it attracted were monumental in advancing women's suffrage in the United States."</p>
+                                        <cite>“Woman Suffrage Parade of 1913.” Wikipedia, Wikimedia Foundation, 26 Oct. 2018, en.wikipedia.org/wiki/Woman_suffrage_parade_of_1913.</cite>
+                                    </div>
+                                </div>
+                                <div class="eventContainer">
+                                    <div class="eventContent">
+                                        <img src="images/sanger.jpg" class="eventImg" alt="Margaret Sanger">
+                                        <details><summary>Details</summary>By Underwood &amp; Underwood - Library of Congress Prints and Photographs division, reproduction number LC-USZ62-29808. <a rel="nofollow" class="external autonumber" href="https://www.loc.gov/rr/print/list/235_pos.html">[1]</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=40160">Link</a></details>
+                                        <h2 class="contentTitle">Margaret Sanger</h2>
+                                        <h3>October 16, 1916</h3>
+                                        <p class="content">"Margaret Higgins Sanger (born Margaret Louise Higgins, September 14, 1879 – September 6, 1966, also known as Margaret Sanger Slee) was an American birth control activist, sex educator, writer, and nurse. Sanger popularized the term "birth control", opened the first birth control clinic in the United States, and established organizations that evolved into the Planned Parenthood Federation of America."</p>
+                                        <cite>“Margaret Sanger.” Wikipedia, Wikimedia Foundation, 3 Dec. 2018, en.wikipedia.org/wiki/Margaret_Sanger.</cite>
+                                    </div>
+                                </div>
+                                <div class="eventContainer">
+                                    <div class="eventContent">
+                                        <img src="images/rankin.jpg" class="eventImg" alt="Jeannette Rankin leans out window">
+                                        <details><summary>Details</summary>By C. T. Chapman, Kensington, Md. (Photographer) - This image is available from the United States <a href="//commons.wikimedia.org/wiki/Library_of_Congress" title="Library of Congress">Library of Congress</a>'s <a rel="nofollow" class="external text" href="//www.loc.gov/rr/print/">Prints and Photographs division</a> under the digital ID <a rel="nofollow" class="external text" href="http://hdl.loc.gov/loc.pnp/mnwp.156007">mnwp.156007</a>.This tag does not indicate the copyright status of the attached work. A normal copyright tag is still required. See <a href="//commons.wikimedia.org/wiki/Commons:Licensing" title="Commons:Licensing">Commons:Licensing</a> for more information., Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=66638486">Link</a></details>
+                                        <h2 class="contentTitle">Jeannette Rankin</h2>
+                                        <h3>1916</h3>
+                                        <p class="content">"Jeannette Pickering Rankin (June 11, 1880 – May 18, 1973) was an American politician and women's rights advocate, and the first woman to hold federal office in the United States. She was elected to the U.S. House of Representatives by the state of Montana in 1916, and again in 1940. She remains the only woman elected to Congress from Montana."</p>
+                                        <cite>“Jeannette Rankin.” Wikipedia, Wikimedia Foundation, 22 Nov. 2018, en.wikipedia.org/wiki/Jeannette_Rankin.</cite>
+                                    </div>
+                                </div>
+                                <div class="eventContainer">
+                                    <div class="eventContent">
+                                        <img src="images/silent.jpg" class="eventImg" alt="Silent Sentinels protest in front of the White House">
+                                        <details><summary>Details</summary>Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=790966">Link</a></details>
+                                        <h2 class="contentTitle">Silent Sentinels</h2>
+                                        <h3>January 9, 1917</h3>
+                                        <p class="content">"The Silent Sentinels were a group of women in favor of women's suffrage organized by Alice Paul and the National Woman's Party. They protested in front of the White House during Woodrow Wilson's presidency starting on January 10, 1917.[1] The Silent Sentinels started to protest after a meeting with the president on January 9, 1917, during which he told the women to "concert public opinion on behalf of women's suffrage." The protesters served as a constant reminder to Wilson of his lack of support for suffrage. At first the picketers were tolerated, but they were later arrested on charges of obstructing traffic.The women protested for six days a week until June 4, 1919 when the Nineteenth Amendment to the United States Constitution was passed both by the House of Representatives and the Senate."<br>"Throughout this two and a half year long vigil many of the nearly 2,000 women[3] who picketed were harassed, arrested, and unjustly treated by local and US authorities, including the torture and abuse inflicted on them before and during the November 14, 1917 Night of Terror."</p>
+                                        <cite>“Silent Sentinels.” Wikipedia, Wikimedia Foundation, 29 Nov. 2018, en.wikipedia.org/wiki/Silent_Sentinels.</cite>
+                                    </div>
+                                </div>
+                                <div class="eventContainer">
+                                    <div class="eventContent">
+                                        <img src="images/burns.jpg" class="eventImg" alt="Suffragist in jail">
+                                        <details><summary>Details</summary>By Photographs from the Records of the National Woman's Party / Harris &amp; Ewing, Washington, D.C. - Library of Congress / <a rel="nofollow" class="external autonumber" href="http://hdl.loc.gov/loc.mss/mnwp.274009">[1]</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=1282419">Link</a></details>
+                                        <h2 class="contentTitle">Occoquan Workhouse and the Night of Terror</h2>
+                                        <h3>November 14, 1917</h3>
+                                        <p class="content">On the night of November 14, 1917, known as the "Night of Terror", the superintendent of the Occoquan Workhouse, W.H. Whittaker, ordered the nearly forty guards to brutalize the suffragists. They beat Lucy Burns, chained her hands to the cell bars above her head, then left her there for the night.They threw Dora Lewis into a dark cell and smashed her head against an iron bed, which knocked her out. Her cellmate, Alice Cosu, who believed Lewis to be dead, suffered a heart attack. Dorothy Day, who later co-founded the Catholic Worker Movement, was slammed repeatedly over the back of an iron bench. Guards grabbed, dragged, beat, choked, pinched, and kicked other women. Newspapers carried stories about how the protesters were being treated.[16] The stories angered some Americans and created more support for the suffrage amendment. On November 27 and 28, all the protesters were released, including Alice Paul after spending five weeks in prison. Later, in March 1918, the D.C. Circuit Court of Appeals vacated six suffragists' convictions. The court held that the informations on which the women's convictions were based were overly vague.</p>
+                                        <cite>“Silent Sentinels.” Wikipedia, Wikimedia Foundation, 29 Nov. 2018, en.wikipedia.org/wiki/Silent_Sentinels#Occoquan_Workhouse_and_the_Night_of_Terror.</cite>
+                                    </div>
+                                </div>
+                                <div class="eventContainer">
+                                    <div class="eventContent">
+                                        <img src="images/vote.jpg" class="eventImg" alt="Suffrage Bill being signed into law">
+                                        <details><summary>Details</summary>By International Film Service - Outlook, 6/25/1919, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=47199456">Link</a></details>
+                                        <h2 class="contentTitle">Nineteenth Admendment Ratified</h2>
+                                        <h3>August 18, 1920</h3>
+                                        <p class="content">"Until the 1910s, most states did not give women the right to vote. The amendment was the culmination of the women's suffrage movement in the United States, which fought at both state and national levels to achieve the vote. It effectively overruled Minor v. Happersett (1875), in which a unanimous Supreme Court ruled that the Fourteenth Amendment did not give women the right to vote.<br>The Nineteenth Amendment was originally introduced in Congress in 1878 by Senator Aaron A. Sargent. Forty-one years later, in 1919, Congress submitted it to the states for ratification. It was ratified by three-fourths of the states a year later, with Tennessee's ratification being the last needed to add the amendment to the Constitution. In Leser v. Garnett (1922), the Supreme Court rejected claims that the amendment was unconstitutionally adopted."</p>
+                                        <cite>“Nineteenth Amendment to the United States Constitution.” Wikipedia, Wikimedia Foundation, 15 Nov. 2018, en.wikipedia.org/wiki/Nineteenth_Amendment_to_the_United_States_Constitution.</cite>
+                                    </div>
+                                </div>
+                                <div class="eventContainer">
+                                    <div class="eventContent">
+                                        <img src="images/towner.jpg" class="eventImg" alt="Towner">
+                                        <details><summary>Details</summary>By Harris &amp; Ewing, photographer - This image is available from the United States <a href="//commons.wikimedia.org/wiki/Library_of_Congress" title="Library of Congress">Library of Congress</a>'s <a rel="nofollow" class="external text" href="//www.loc.gov/rr/print/">Prints and Photographs division</a> under the digital ID <a rel="nofollow" class="external text" href="http://hdl.loc.gov/loc.pnp/hec.17026">hec.17026</a>.This tag does not indicate the copyright status of the attached work. A normal copyright tag is still required. See <a href="//commons.wikimedia.org/wiki/Commons:Licensing" title="Commons:Licensing">Commons:Licensing</a> for more information., Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=9972717">Link</a></details>
+                                        <h2 class="contentTitle">Sheppard–Towner Act</h2>
+                                        <h3>November 23, 1921</h3>
+                                        <p class="content">"The Sheppard–Towner Act was the first venture of the federal government into social security legislation and the first major legislation that came to exist after the full enfranchisement of women. This marked the political and economic power of women's issues since the bill was passed due to the organization and influence of the Children's Bureau and the newly formed Women's Joint Congressional Committee. Before its passage, most of the expansion in public health programs occurred at the state and local levels. The act played an important role in the medicalization of pregnancy and childbirth, the decrease in infant mortality rates, and the expansion of federal welfare legislation in the twentieth century United States."</p>
+                                        <cite>“Sheppard–Towner Act.” Wikipedia, Wikimedia Foundation, 3 Dec. 2018, en.wikipedia.org/wiki/Sheppard–Towner_Act.</cite>
+                                    </div>
+                                </div>
+                                <div class="eventContainer">
+                                    <div class="eventContent">
+                                        <img src="images/f_king.png" class="eventImg" alt="Florence King">
+                                        <details><summary>Details</summary>By Western Newspaper Union. - <a rel="nofollow" class="external text" href="https://books.google.com/books?id=8TLmAAAAMAAJ&amp;pg=PA19#v=onepage&amp;q&amp;f=false">"She is the First One of her Kind"</a> Green Book Magazine (January 1920): 19., Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=63888609">Link</a></details>
+                                        <h2 class="contentTitle">Florence King</h2>
+                                        <h3>1923</h3>
+                                        <p class="content">"King became the first woman registered to practice before the U.S. Patent Office in 1897, became the first woman to argue a patent case before the U.S. Supreme Court in 1922, and became the first woman to win a case before the U.S. Supreme Court in 1923 (Crown v. Nye)."</p>
+                                        <cite>“Florence King (Patent Attorney).” Wikipedia, Wikimedia Foundation, 19 Oct. 2018, en.wikipedia.org/wiki/Florence_King_(patent_attorney).</cite>
+                                    </div>
+                                </div>
+                                <div class="eventContainer">
+                                    <div class="eventContent">
+                                        <img src="images/earhart.jpg" class="eventImg" alt="Amelia Earhart">
+                                        <details><summary>Details</summary>By Underwood &amp; Underwood (active 1880 – c. 1950)<a rel="nofollow" class="external autonumber" href="http://www.npg.si.edu/exhibit/earhart/pop-ups/12.html">[1]</a> - <a rel="nofollow" class="external free" href="http://amextbg2.wgbhdigital.org/wgbh/americanexperience/media/uploads/special_features/photo_gallery/amelia_gallery_07.jpg">http://amextbg2.wgbhdigital.org/wgbh/americanexperience/media/uploads/special_features/photo_gallery/amelia_gallery_07.jpg</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=57938262">Link</a></details>
+                                        <h2 class="contentTitle">Amelia Earhart</h2>
+                                        <h3>May 20, 1932</h3>
+                                        <p class="content">"Earhart was the first female aviator to fly solo across the Atlantic Ocean. She received the United States Distinguished Flying Cross for this accomplishment. She set many other records, wrote best-selling books about her flying experiences and was instrumental in the formation of The Ninety-Nines, an organization for female pilots. In 1935, Earhart became a visiting faculty member at Purdue University as an advisor to aeronautical engineering and a career counselor to women students. She was also a member of the National Woman's Party and an early supporter of the Equal Rights Amendment."</p>
+                                        <cite>“Amelia Earhart.” Wikipedia, Wikimedia Foundation, 29 Nov. 2018, en.wikipedia.org/wiki/Amelia_Earhart.</cite>
+                                    </div>
+                                </div>
+                                <div class="eventContainer">
+                                    <div class="eventContent">
+                                        <img src="images/cline.jpg" class="eventImg" alt="Genevieve Cline">
+                                        <details><summary>Details</summary>By Underwood &amp; Underwood - This image is available from the United States <a href="//commons.wikimedia.org/wiki/Library_of_Congress" title="Library of Congress">Library of Congress</a>'s <a rel="nofollow" class="external text" href="//www.loc.gov/rr/print/">Prints and Photographs division</a> under the digital ID <a rel="nofollow" class="external text" href="http://hdl.loc.gov/loc.pnp/cph.3c34637">cph.3c34637</a>.This tag does not indicate the copyright status of the attached work. A normal copyright tag is still required. See <a href="//commons.wikimedia.org/wiki/Commons:Licensing" title="Commons:Licensing">Commons:Licensing</a> for more information., Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=29522348">Link</a></details>
+                                        <h2 class="contentTitle">Genevieve R. Cline</h2>
+                                        <h3>May 26, 1928</h3>
+                                        <p class="content">"Genevieve Rose Cline (July 2, 1879 – October 25, 1959) was an American jurist. In 1928, she became the first woman named to the federal judiciary, serving as a Judge for the United States Customs Court."</p>
+                                        <cite>“Genevieve R. Cline.” Wikipedia, Wikimedia Foundation, 9 Sept. 2018, en.wikipedia.org/wiki/Genevieve_R._Cline.</cite>
+                                    </div>
+                                </div>
+                                <div class="eventContainer">
+                                    <div class="eventContent">
+                                        <img src="images/addams.jpg" class="eventImg" alt="Jane Addams">
+                                        <details><summary>Details</summary>By Bain News ServiceRestoration by <a href="//commons.wikimedia.org/wiki/User:Adam_Cuerden" title="User:Adam Cuerden">Adam Cuerden</a> - This image is available from the United States <a href="//commons.wikimedia.org/wiki/Library_of_Congress" title="Library of Congress">Library of Congress</a>'s <a rel="nofollow" class="external text" href="//www.loc.gov/rr/print/">Prints and Photographs division</a> under the digital ID <a rel="nofollow" class="external text" href="http://hdl.loc.gov/loc.pnp/ggbain.39054">ggbain.39054</a>.This tag does not indicate the copyright status of the attached work. A normal copyright tag is still required. See <a href="//commons.wikimedia.org/wiki/Commons:Licensing" title="Commons:Licensing">Commons:Licensing</a> for more information., Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=40388184">Link</a></details>
+                                        <h2 class="contentTitle">Jane Addams</h2>
+                                        <h3>1931</h3>
+                                        <p class="content">"In an era when presidents such as Theodore Roosevelt and Woodrow Wilson identified themselves as reformers and social activists, Addams was one of the most prominent reformers of the Progressive Era. She helped America address and focus on issues that were of concern to mothers, such as the needs of children, local public health, and world peace. In her essay "Utilization of Women in City Government," Jane Addams noted the connection between the workings of government and the household, stating that many departments of government, such as sanitation and the schooling of children, could be traced back to traditional women's roles in the private sphere. Thus, these were matters of which women would have more knowledge than men, so women needed the vote to best voice their opinions. She said that if women were to be responsible for cleaning up their communities and making them better places to live, they needed to be able to vote to do so effectively. Addams became a role model for middle-class women who volunteered to uplift their communities. She is increasingly being recognized as a member of the American pragmatist school of philosophy, and is known by many as the first woman "public philosopher in the history of the United States". In 1889 she co-founded Hull House, and in 1920 she was a co-founder for the ACLU. In 1931 she became the first American woman to be awarded the Nobel Peace Prize, and is recognized as the founder of the social work profession in the United States"</p>
+                                        <cite>“Jane Addams.” Wikipedia, Wikimedia Foundation, 19 Nov. 2018, en.wikipedia.org/wiki/Jane_Addams.</cite>
+                                    </div>
+                                </div>
+                                <div class="eventContainer">
+                                    <div class="eventContent">
+                                        <img src="images/caraway.jpg" class="eventImg" alt="Hattie Wyatt Caraway">
+                                        <details><summary>Details</summary>By Underwood &amp; Underwood - This image is available from the United States <a href="//commons.wikimedia.org/wiki/Library_of_Congress" title="Library of Congress">Library of Congress</a>'s <a rel="nofollow" class="external text" href="//www.loc.gov/rr/print/">Prints and Photographs division</a> under the digital ID <a rel="nofollow" class="external text" href="http://hdl.loc.gov/loc.pnp/cph.3b11365">cph.3b11365</a>.This tag does not indicate the copyright status of the attached work. A normal copyright tag is still required. See <a href="//commons.wikimedia.org/wiki/Commons:Licensing" title="Commons:Licensing">Commons:Licensing</a> for more information., Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=46017668">Link</a></details>
+                                        <h2 class="contentTitle">Hattie Wyatt Caraway</h2>
+                                        <h3>November 13, 1931</h3>
+                                        <p class="content">"Hattie Ophelia Wyatt Caraway (February 1, 1878 – December 21, 1950) was an American politician who became the first woman elected to serve a full term as a United States Senator. Caraway represented Arkansas. She was the first woman to preside over the Senate. She won reelection to a full term in 1932 with the active support of fellow Senator Huey Long, of neighboring Louisiana."</p>
+                                        <cite>“Hattie Wyatt Caraway.” Wikipedia, Wikimedia Foundation, 20 Oct. 2018, en.wikipedia.org/wiki/Hattie_Wyatt_Caraway. </cite>
+                                    </div>
+                                </div>
+                                <div class="eventContainer">
+                                    <div class="eventContent">
+                                        <img src="images/perkins.jpg" class="eventImg" alt="Frances Perkins">
+                                        <details><summary>Details</summary>By<span lang="en">Unknown</span> - This image is available from the United States <a href="//commons.wikimedia.org/wiki/Library_of_Congress" title="Library of Congress">Library of Congress</a>'s <a rel="nofollow" class="external text" href="//www.loc.gov/rr/print/">Prints and Photographs division</a> under the digital ID <a rel="nofollow" class="external text" href="http://hdl.loc.gov/loc.pnp/cph.3a04983">cph.3a04983</a>.This tag does not indicate the copyright status of the attached work. A normal copyright tag is still required. See <a href="//commons.wikimedia.org/wiki/Commons:Licensing" title="Commons:Licensing">Commons:Licensing</a> for more information., Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=27458767">Link</a></details>
+                                        <h2 class="contentTitle">Frances Perkins</h2>
+                                        <h3>March 4, 1933</h3>
+                                        <p class="content">"Frances Perkins (born Fannie Coralie Perkins; April 10, 1880 – May 14, 1965) was an American sociologist and workers-rights advocate who served as the U.S. Secretary of Labor from 1933 to 1945, the longest serving in that position, and the first woman appointed to the U.S. Cabinet. As a loyal supporter of her friend, Franklin D. Roosevelt, she helped pull the labor movement into the New Deal coalition. She and Interior Secretary Harold L. Ickes were the only original members of the Roosevelt cabinet to remain in office for his entire presidency."</p>
+                                        <cite>“Frances Perkins.” Wikipedia, Wikimedia Foundation, 22 Nov. 2018, en.wikipedia.org/wiki/Frances_Perkins.</cite>
+                                    </div>
+                                </div>
+                                <div class="eventContainer">
+                                    <div class="eventContent">
+                                        <img src="images/harlan.jpg" class="eventImg" alt="Justice John Marshall Harlan II">
+                                        <details><summary>Details</summary>By Supreme Court of the United States - <a rel="nofollow" class="external text" href="http://www.oyez.org/justices/john_m_harlan2/photograph/">Oyez</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=12079475">Link</a></details>
+                                        <h2 class="contentTitle">Hoyt v. Florida</h2>
+                                        <h3>1961</h3>
+                                        <p class="content">"Hoyt v. Florida, 368 U.S. 57 (1961), was an appeal by Gwendolyn Hoyt, who had killed her husband and received a jail sentence for second degree murder. Although she had suffered mental and physical abuse in her marriage and showed neurotic, if not psychotic, behavior, a six-man jury deliberated for just 25 minutes before finding her guilty. They sentenced her to 30 years of hard labor. Hoyt claimed that her all-male jury led to discrimination and unfair circumstances during her trial. The decision was subsequently overruled by Taylor v. Louisiana in 1975."</p>
+                                        <cite>“Hoyt v. Florida.” Wikipedia, Wikimedia Foundation, 11 Nov. 2018, en.wikipedia.org/wiki/Hoyt_v._Florida.</cite>
+                                    </div>
+                                </div>
+                                <div class="eventContainer">
+                                    <div class="eventContent">
+                                        <img src="images/equal.jpg" class="eventImg" alt="President John Kennedy signing Equal Pay Act into law">
+                                        <details><summary>Details</summary>By <a href="https://en.wikipedia.org/wiki/en:Abbie_Rowe" class="extiw" title="w:en:Abbie Rowe">Abbie Rowe</a> - <a rel="nofollow" class="external text" href="https://www.jfklibrary.org/Asset-Viewer/Archives/JFKWHP-1963-06-10-B.aspx">JFK Presidential Library and Museum</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=26585027">Link</a></details>
+                                        <h2 class="contentTitle">Equal Pay Act of 1963</h2>
+                                        <h3>1963</h3>
+                                        <p class="content">"The Equal Pay Act of 1963 is a United States labor law amending the Fair Labor Standards Act, aimed at abolishing wage disparity based on sex. It was signed into law on June 10, 1963, by John F. Kennedy as part of his New Frontier Program."</p>
+                                        <cite>“Equal Pay Act of 1963.” Wikipedia, Wikimedia Foundation, 28 Nov. 2018, en.wikipedia.org/wiki/Equal_Pay_Act_of_1963.</cite>
+                                    </div>
+                                </div>
+                                <div class="eventContainer">
+                                    <div class="eventContent">
+                                        <img src="images/friedman.jpg" class="eventImg" alt="Betty Friedan">
+                                        <details><summary>Details</summary>By Fred Palumbo, World Telegram staff photographer. Restored by <a href="//commons.wikimedia.org/wiki/User:Adam_Cuerden" title="User:Adam Cuerden">Adam Cuerden</a> - Library of Congress. New York World-Telegram &amp; Sun Collection. <a rel="nofollow" class="external free" href="http://hdl.loc.gov/loc.pnp/cph.3c15884">http://hdl.loc.gov/loc.pnp/cph.3c15884</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=1265917">Link</a></details>
+                                        <h2 class="contentTitle">The Feminine Mystique</h2>
+                                        <h3>February 19, 1963</h3>
+                                        <p class="content">"The Feminine Mystique is a book written by Betty Friedan which is widely credited with sparking the beginning of second-wave feminism in the United States. It was published on February 19, 1963 by W. W. Norton. In 1957, Friedan was asked to conduct a survey of her former Smith College classmates for their 15th anniversary reunion; the results, in which she found that many of them were unhappy with their lives as housewives, prompted her to begin research for The Feminine Mystique, conducting interviews with other suburban housewives, as well as researching psychology, media, and advertising. She originally intended to publish an article on the topic, not a book, but no magazine would publish her article."</p>
+                                        <cite>“The Feminine Mystique.” Wikipedia, Wikimedia Foundation, 17 Nov. 2018, en.wikipedia.org/wiki/The_Feminine_Mystique.</cite>
+                                    </div>
+                                </div>
+                                <div class="eventContainer">
+                                    <div class="eventContent">
+                                        <img src="images/king.jpg" class="eventImg" alt="Lyndon B. Johnson and Martin Luther King">
+                                        <details><summary>Details</summary>By <a href="https://en.wikipedia.org/wiki/en:Yoichi_Okamoto" class="extiw" title="w:en:Yoichi Okamoto">Yoichi Okamoto</a> - Lyndon Baines Johnson Library and Museum. Image Serial Number: A1030-17a. <a rel="nofollow" class="external free" href="http://www.lbjlibrary.net/collections/photo-archive/photolab-detail.html?id=222">http://www.lbjlibrary.net/collections/photo-archive/photolab-detail.html?id=222</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=1303469">Link</a></details>
+                                        <h2 class="contentTitle">Voting Rights Act of 1965</h2>
+                                        <h3>August 6, 1965</h3>
+                                        <p class="content">"The Voting Rights Act of 1965 is a landmark piece of federal legislation in the United States that prohibits racial discrimination in voting. It was signed into law by President Lyndon B. Johnson during the height of the Civil Rights Movement on August 6, 1965, and Congress later amended the Act five times to expand its protections. Designed to enforce the voting rights guaranteed by the Fourteenth and Fifteenth Amendments to the United States Constitution, the Act secured the right to vote for racial minorities throughout the country, especially in the South. According to the U.S. Department of Justice, the Act is considered to be the most effective piece of federal civil rights legislation ever enacted in the country."</p>
+                                        <cite>“Voting Rights Act of 1965.” Wikipedia, Wikimedia Foundation, 15 Nov. 2018, en.wikipedia.org/wiki/Voting_Rights_Act_of_1965.</cite>
+                                    </div>
+                                </div>
+                                <div class="eventContainer">
+                                    <div class="eventContent">
+                                        <img src="images/griswold.jpg" class="eventImg" alt="Estelle Griswold and Mrs. Ernest Jahncke">
+                                        <details><summary>Details</summary>Estelle Griswold (L), medical advisor and executive director of the Planned Parenthood Clinic in New Haven, and Mrs. Ernest Jahncke, president of Parenthood League of Connecticut, Inc., flash a victory sign as a result of the court’s decision that Connecticut’s birth control law was unconstitutional – © 2015 Bettmann/Corbis / Associated Press</details>
+                                        <h2 class="contentTitle">Griswoldv. Connecticut</h2>
+                                        <h3>1965</h3>
+                                        <p class="content">"Griswold v. Connecticut, 381 U.S. 479 (1965), is a landmark case in the United States about access to contraception. The case involved a Connecticut "Comstock law" that prohibited any person from using "any drug, medicinal article or instrument for the purpose of preventing conception." The court held that the statute was unconstitutional, and that "the clear effect of [the Connecticut law ...] is to deny disadvantaged citizens ... access to medical assistance and up-to-date information in respect to proper methods of birth control." By a vote of 7–2, the Supreme Court invalidated the law on the grounds that it violated the "right to marital privacy", establishing the basis for the right to privacy with respect to intimate practices. This and other cases view the right to privacy as a right to "protect[ion] from governmental intrusion.""</p>
+                                        <cite>“Griswold v. Connecticut.” Wikipedia, Wikimedia Foundation, 12 Nov. 2018, en.wikipedia.org/wiki/Griswold_v._Connecticut.</cite>
+                                    </div>
+                                </div>
+                                <div class="eventContainer">
+                                    <div class="eventContent">
+                                        <img src="images/johnson.jpg" class="eventImg" alt="Lyndon B. Johnson in the oval office">
+                                        <details><summary>Details</summary>By <a href="https://en.wikipedia.org/wiki/en:Yoichi_Okamoto" class="extiw" title="w:en:Yoichi Okamoto">Yoichi Okamoto</a> - LBJ Library, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=28360057">Link</a></details>
+                                        <h2 class="contentTitle">Executive Order 11375</h2>
+                                        <h3>October 13, 1967</h3>
+                                        <p class="content">"Executive Order 11375, signed by President Lyndon B. Johnson on October 13, 1967, banned discrimination on the basis of sex in hiring and employment in both the United States federal workforce and on the part of government contractors."</p>
+                                        <cite>“Executive Order 11375.” Wikipedia, Wikimedia Foundation, 24 July 2018, en.wikipedia.org/wiki/Executive_Order_11375.</cite>
+                                    </div>
+                                </div>
+                                <div class="eventContainer">
+                                    <div class="eventContent">
+                                        <img src="images/housing.jpg" class="eventImg" alt="Protesters protesting for the Fair Housing Act">
+                                        <h2 class="contentTitle">Fair Housing Act</h2>
+                                        <h3>1968</h3>
+                                        <p class="content">"The Fair Housing Act is a federal act in the United States intended to protect the buyer or renter of a dwelling from seller or landlord discrimination. Its primary prohibition makes it unlawful to refuse to sell, rent to, or negotiate with any person because of that person's inclusion in a protected class. The goal is a unitary housing market in which a person's background (as opposed to financial resources) does not arbitrarily restrict access. Calls for open housing were issued early in the twentieth century, but it was not until after World War II that concerted efforts to achieve it were undertaken."</p>
+                                        <cite>“Fair Housing Act.” Wikipedia, Wikimedia Foundation, 11 Oct. 2018, en.wikipedia.org/wiki/Fair_Housing_Act.</cite>
+                                    </div>
+                                </div>
+                                <div class="eventContainer">
+                                    <div class="eventContent">
+                                        <img src="images/roe.jpg" class="eventImg" alt="Norma McCorvey and Gloria Allred">
+                                        <details><summary>Details</summary>By Lorie Shaull. Norma McCorvey (Jane Roe) and her lawyer Gloria Allred on the steps of the Supreme Court, 1989.</details>
+                                        <h2 class="contentTitle">Roe v. Wade</h2>
+                                        <h3>1973</h3>
+                                        <p class="content">"Roe v. Wade, 410 U.S. 113 (1973), is a landmark decision issued in 1973 by the United States Supreme Court on the issue of the constitutionality of laws that criminalized or restricted access to abortions. The Court ruled 7–2 that a right to privacy under the Due Process Clause of the 14th Amendment extended to a woman's decision to have an abortion, but that this right must be balanced against the state's interests in regulating abortions: protecting women's health and protecting the potentiality of human life. Arguing that these state interests became stronger over the course of a pregnancy, the Court resolved this balancing test by tying state regulation of abortion to the third trimester of pregnancy."</p>
+                                        <cite>“Roe v. Wade.” Wikipedia, Wikimedia Foundation, 28 Nov. 2018, en.wikipedia.org/wiki/Roe_v._Wade.</cite>
+                                    </div>
+                                </div>
+                                <div class="eventContainer">
+                                    <div class="eventContent">
+                                        <img src="images/ge.jpg" class="eventImg" alt="General Electric sign">
+                                        <details><summary>Details</summary>By <a href="https://en.wikipedia.org/wiki/User:Bubba73" class="extiw" title="wikipedia:User:Bubba73">Bubba73</a> at <a href="https://en.wikipedia.org/wiki/" class="extiw" title="wikipedia:">English Wikipedia</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=7970138">Link</a></details>
+                                        <h2 class="contentTitle">Pregnancy Discrimination Act</h2>
+                                        <h3>1978</h3>
+                                        <p class="content">"The Pregnancy Discrimination Act (PDA) of 1978 (Pub.L. 95–555) is a United States federal statute. It amended Title VII of the Civil Rights Act of 1964 to "prohibit sex discrimination on the basis of pregnancy." The Act covers discrimination "on the basis of pregnancy, childbirth, or related medical conditions." The pregnancy must be deemed as a normal, objectifiable condition, for that to be enacted. Employers with fewer than 15 employees are exempted from the Act. Employers are exempt from providing medical coverage for elective abortions, unless the mother's life is threatened, but are required to provide disability and sick leave for women who are recovering from an abortion."</p>
+                                        <cite>“Pregnancy Discrimination Act.” Wikipedia, Wikimedia Foundation, 22 Sept. 2018, en.wikipedia.org/wiki/Pregnancy_Discrimination_Act.</cite>
+                                    </div>
+                                </div>
+                                <div class="eventContainer">
+                                    <div class="eventContent">
+                                        <img src="images/connor.jpg" class="eventImg" alt="Sandra Day O'Connor being sworn in">
+                                        <details><summary>Details</summary>By <a rel="nofollow" class="external text" href="https://www.flickr.com/photos/35740357@N03">The U.S. National Archives</a> - This media is available in the holdings of the <a href="//commons.wikimedia.org/wiki/National_Archives_and_Records_Administration" title="National Archives and Records Administration">National Archives and Records Administration</a>, cataloged under the National Archives Identifier (NAID) <a rel="nofollow" class="external text" href="https://catalog.archives.gov/id/1696015">1696015</a>., <a href="https://www.flickr.com/commons/usage/" title="No known copyright restrictions">No restrictions</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=14744169">Link</a></details>
+                                        <h2 class="contentTitle">Sandra Day O'Connor</h2>
+                                        <h3>September 25, 1981</h3>
+                                        <p class="content">"Sandra Day O'Connor (born March 26, 1930) is a retired Associate Justice of the Supreme Court of the United States, who served from her appointment in 1981 by Ronald Reagan until her retirement in 2006. She was the first woman to serve on the Court."</p>
+                                        <cite>“Sandra Day O'Connor.” Wikipedia, Wikimedia Foundation, 1 Dec. 2018, en.wikipedia.org/wiki/Sandra_Day_O'Connor.</cite>
+                                    </div>
+                                </div>
+                                <div class="eventContainer">
+                                    <div class="eventContent">
+                                        <img src="images/blackmun.jpg" class="eventImg" alt="Justice Blackmun">
+                                        <details><summary>Details</summary>Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=636069">Link</a></details>
+                                        <h2 class="contentTitle">United Automobile Workers v. Johnson Controls, Inc.</h2>
+                                        <h3>1991</h3>
+                                        <p class="content">"United Automobile Workers v. Johnson Controls, Inc. 499 U.S. 187 (1991), was a decision by the Supreme Court of the United States establishing that private sector policies prohibiting women from knowingly working in potentially hazardous occupations are discriminatory and in violation of Title VII and the Pregnancy Discrimination Act of 1978. At the time the case was heard, it was considered one of the most important sex-discrimination cases since the passage of Title VII."</p>
+                                        <cite>“United Automobile Workers v. Johnson Controls, Inc.” Wikipedia, Wikimedia Foundation, 9 Nov. 2018, en.wikipedia.org/wiki/United_Automobile_Workers_v._Johnson_Controls,_Inc.</cite>
+                                    </div>
+                                </div>
+                                <div class="eventContainer">
+                                    <div class="eventContent">
+                                        <img src="images/hill.jpg" class="eventImg" alt="Anita Hill testifies">
+                                        <details><summary>Details</summary>Anita Hill testifies in front of Senate panel [File: AP Photo]</details>
+                                        <h2 class="contentTitle">Anita Hill</h2>
+                                        <h3>1991</h3>
+                                        <p class="content">"Anita Faye Hill (born July 30, 1956) is an American attorney and academic. She is a university professor of social policy, law, and women's studies at Brandeis University and a faculty member of Brandeis' Heller School for Social Policy and Management. She became a national figure in 1991 when she accused U.S. Supreme Court nominee Clarence Thomas, her supervisor at the United States Department of Education and the Equal Employment Opportunity Commission, of sexual harassment"</p>
+                                        <cite>“Anita Hill.” Wikipedia, Wikimedia Foundation, 2 Dec. 2018, en.wikipedia.org/wiki/Anita_Hill.</cite>
+                                    </div>
+                                </div>
+                                <div class="eventContainer">
+                                    <div class="eventContent">
+                                        <img src="images/kids.jpg" class="eventImg" alt="Children in school">
+                                        <details><summary>Details</summary>By Airman 1st Class Hunter Brady - <a rel="nofollow" class="external free" href="https://www.dvidshub.net/image/650204">https://www.dvidshub.net/image/650204</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=39382533">Link</a></details>
+                                        <h2 class="contentTitle">Family and Medical Leave Act of 1993</h2>
+                                        <h3>1993</h3>
+                                        <p class="content">"The Family and Medical Leave Act of 1993 (FMLA) is a United States labor law requiring covered employers to provide employees with job-protected and unpaid leave for qualified medical and family reasons. These include pregnancy, adoption, foster care placement of a child, personal or family illness, or family military leave. The FMLA is administered by the Wage and Hour Division of the United States Department of Labor."</p>
+                                        <cite>“Family and Medical Leave Act of 1993.” Wikipedia, Wikimedia Foundation, 27 Nov. 2018, en.wikipedia.org/wiki/Family_and_Medical_Leave_Act_of_1993.</cite>
+                                    </div>
+                                </div>
+                                <div class="eventContainer">
+                                    <div class="eventContent">
+                                        <img src="images/vawa.jpg" class="eventImg" alt="Protesters for VAWA">
+                                        <details><summary>Details</summary>Members of the The National Organization for Women (NOW), the National Task Force to End Sexual Assault and Domestic Violence Against Women and other groups hold a rally in support of the Violence Against Women Act (VAWA) on Capitol Hill June 26, 2012 in Washington, DC. Photo by Chip Somodevilla/Getty Images.</details>
+                                        <h2 class="contentTitle">Violence Against Women Act</h2>
+                                        <h3>1994</h3>
+                                        <p class="content">"The Violence Against Women Act of 1994 (VAWA) is a United States federal law (Title IV, sec. 40001-40703 of the Violent Crime Control and Law Enforcement Act, H.R. 3355) signed as Pub.L. 103–322 by President Bill Clinton on September 13, 1994 (codified in part at 42 U.S.C. sections 13701 through 14040). The Act provided $1.6 billion toward investigation and prosecution of violent crimes against women, imposed automatic and mandatory restitution on those convicted, and allowed civil redress in cases prosecutors chose to leave un-prosecuted. The Act also established the Office on Violence Against Women within the Department of Justice."</p>
+                                        <cite>“Violence Against Women Act.” Wikipedia, Wikimedia Foundation, 4 Nov. 2018, en.wikipedia.org/wiki/Violence_Against_Women_Act.</cite>
+                                    </div>
+                                </div>
+                                <div class="eventContainer">
+                                    <div class="eventContent">
+                                        <img src="images/lautenberg.jpg" class="eventImg" alt="Frank Lautenberg">
+                                        <details><summary>Details</summary>By United States Senate - <a rel="nofollow" class="external free" href="http://lautenberg.senate.gov/images/Lautenberg_2011.jpg">http://lautenberg.senate.gov/images/Lautenberg_2011.jpg</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=15955409">Link</a></details>
+                                        <h2 class="contentTitle">Domestic Violence Offender Gun Ban (The Lautenberg Amendment)</h2>
+                                        <h3>1997</h3>
+                                        <p class="content">"The Domestic Violence Offender Gun Ban, often called "the Lautenberg Amendment" ("Gun Ban for Individuals Convicted of a Misdemeanor Crime of Domestic Violence", Pub.L. 104–208, 18 U.S.C. § 922(g), is an amendment to the Omnibus Consolidated Appropriations Act of 1997, enacted by the 104th United States Congress in 1996, which bans access to firearms by people convicted of crimes of domestic violence. The act is often referred to as "the Lautenberg Amendment" after its sponsor, Senator Frank Lautenberg (D - NJ)."</p>
+                                        <cite>“Domestic Violence Offender Gun Ban.” Wikipedia, Wikimedia Foundation, 3 Dec. 2018, en.wikipedia.org/wiki/Domestic_Violence_Offender_Gun_Ban.</cite>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-1 next d-sm-none d-lg-flex" onclick="scrollPresent()">
+                        	<i class="fas fa-caret-right nextIcon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="present" class="protein col-lg-12 col-sm-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div id="introPresent">
+                                    <h2 class="display-3">Present</h2>
+                                    <p>The struggle for true equality still carries on. Thanks to modern advancements in technology, getting help and becoming involved has never been easier. Below are just a few organizations helping advance the feminist movement.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div id="activism">
+                                    <div class="accordion shadow bg-dark" id="nonprofits">
+                                        <div class="card">
+                                            <div class="card-header bg-dark" id="headingOne">
+                                                <h5 class="mb-0 text-white">
+											<button class="btn btn-link text-white" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+											National Organization for Women (NOW)
+											</button>
+											</h5>
+                                            </div>
+                                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#nonprofits">
+                                                <div class="card-body text-white">
+                                                    <p>"As the grassroots arm of the women’s movement, the National Organization for Women is dedicated to its multi-issue and multi-strategy approach to women’s rights, and is the largest organization of feminist grassroots activists in the United States."</p><cite class="source"><a href="https://now.org/" class="text-light">www.now.org</a></cite>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-header bg-dark" id="headingTwo">
+                                                    <h5 class="mb-0">
+												<button class="btn btn-link collapsed text-white" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+												Planned Parenthood
+												</button>
+												</h5>
+                                                </div>
+                                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#nonprofits">
+                                                    <div class="card-body text-white">
+                                                        <p>"Today, Planned Parenthood is a trusted health care provider, an informed educator, a passionate advocate, and a global partner helping similar organizations around the world. Planned Parenthood delivers vital reproductive health care, sex education, and information to millions of women, men, and young people worldwide."</p><cite class="source"><a href="https://www.plannedparenthood.org/" class="text-light">www.plannedparenthood.org</a></cite>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-header bg-dark" id="headingThree">
+                                                    <h5 class="mb-0">
+												<button class="btn btn-link collapsed text-white" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+											<abbr title="Rape, Abuse & Incest National Network">RAINN</abbr>
+											</button>
+											</h5>
+                                                </div>
+                                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#nonprofits">
+                                                    <div class="card-body text-white">
+                                                        <p>"RAINN (Rape, Abuse & Incest National Network) is the nation's largest anti-sexual violence organization. RAINN created and operates the National Sexual Assault Hotline in partnership with more than 1,000 local sexual assault service providers across the country and operates the DoD Safe Helpline for the Department of Defense."</p><cite class="source"><a href="https://rainn.org/" class="text-light">www.rainn.org</a></cite>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="twitterFeed" class="col-lg-5">
+                            <a class="twitter-timeline" data-chrome="transparent noheader" data-dnt="true" href="https://twitter.com/yeslikethecar1/lists/feminism?ref_src=twsrc%5Etfw"></a>
+                            <script async src="https://platform.twitter.com/widgets.js"></script>
+                        </div>
+                        <div class="col-lg-1 next d-none d-lg-flex" onclick="scrollFuture()">
+                        	<i class="fas fa-caret-right nextIcon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="future" class="protein col-lg-12 col-sm-12">
+                <div class="container" id="futureContainer">
+                    <div class="row" id="futureTop">
+                        <div id="introFuture" class="col-lg-12 col-sm-12">
+                            <h2 class="display-3">Future</h2>
+                            <p>Many feminist scholars, authors, and philosophers have created great works. Below are five books that are easy introductions to feminism and feminist thinking. Political, economic, and social equality of the sexes can be achieved through education of current and future generations. </p>
+                        </div>
+                    </div>
+                    <div class="row" id="futureBottom">
+                        <div class="col-lg-6 d-none d-lg-block">
+                            <blockquote class="blockquote text-right" id="blockquote">
+                                <p id="quote">“Simply put, feminism is a movement to end sexism, sexist exploitation, and oppression. This was a definition of feminism I offered in Feminist Theory: From Margin to Center more than 10 years ago. It was my hope at the time that it would become a common definition everyone would use. I liked this definition because it did not imply that men were the enemy. By naming sexism as the problem it went directly to the heart of the matter. Practically, it is a definition which implies that all sexist thinking and action is the problem, whether those who perpetuate it are female or male, child or adult. It is also broad enough to include an understanding of systemic institutionalized sexism. As a definition it is open-ended. To understand feminism it implies one has to necessarily understand sexism.”</p>
+                                <footer class="blockquote-footer" id="quoteSource">bell hooks<cite title="Feminism is for Everybody: Passionate Politics" id="quoteBook">Feminism is for Everybody: Passionate Politics</cite></footer>
+                            </blockquote>
+                        </div>
+                        <div class="col-lg-6 col-sm-8" id="booksContainer">
+                            <div class="carousel slide h-100" data-ride="carousel" data-interval="false" id="books">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#books" data-slide-to="0" class="active"></li>
+                                    <li data-target="#books" data-slide-to="1"></li>
+                                    <li data-target="#books" data-slide-to="2"></li>
+                                    <li data-target="#books" data-slide-to="3"></li>
+                                    <li data-target="#books" data-slide-to="4"></li>
+                                </ol>
+                                <div class="carousel-inner h-100" id="bookSlide">
+                                    <div class="carousel-item active h-100" id="4" title="bell1">
+                                        <img class="d-block h-100 bookImage" src="images/bellHooks1.jpg" alt="Feminism Is For Everybody book cover">
+                                    </div>
+                                    <div class="carousel-item h-100" id="0" title="bell2">
+                                        <img class="d-block h-100 bookImage" src="images/bellHooks2.jpg" alt="Ain't I A Woman book cover">
+                                    </div>
+                                    <div class="carousel-item h-100" id="1" title="bad fem">
+                                        <img class="d-block h-100 bookImage" src="images/Gay.jpg" alt="Bad Feminist book cover">
+                                     </div>
+                                    <div class="carousel-item h-100" id="2" title="handmaid">
+                                        <img class="d-block h-100 bookImage" src="images/Atwood.jpg" alt="The Handmaid's Tale book cover">
+                                    </div>
+                                    <div class="carousel-item h-100" id="3" title="Chimamanda">
+                                    	<img class="d-block h-100 bookImage" src="images/Chimamanda.jpg" alt="We Should All Be Feminists book cover">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#books" role="button" data-slide="prev" >
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+                                <a class="carousel-control-next" href="#books" role="button" data-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+     </div>
+    </main>
+    <script src="jqueryFeminist.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="jsFeminist.js"></script>
+</body>
+
+</html>
